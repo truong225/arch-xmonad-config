@@ -1,0 +1,36 @@
+--background no
+--out_to_console yes
+--out_to_x no
+--update_interval 0.5
+--total_run_times 0
+--use_spacer none
+
+--[[
+TEXT
+^fg(\#E38179)^i(~/.xmonad/xbm/.xmonad/dzen2/xbm8x8/uparrow1.xbm)^fg()	\
+${upspeedf emp0s3}	\
+^fg(\#E38179)^i(~/.xmonad/xbm/.xmonad/dzen2/xbm8x8/downarrow1.xbm)^fg()	\
+${downspeedf emp0s3}	\
+
+^bg(\#E38179)	\
+^fg(\#FFFFFF)	\
+
+${exec date + "%a, %b-%d %H:%M"	|	tr	'[:lower:]' '[:upper:]'}	\
+--]]
+
+
+-------------------------------
+
+conky.config={
+	background=false,
+	out_to_console = true,
+	out_to_x = false,
+	update_interval = 0.5,
+	--total_run_times 0,
+	use_spacer = 'none'
+}
+
+conky.text=[[
+	-- ${color grey}Uptime: ${color #CCCC00}	\
+	-- ${color #E38179}Time	\
+]]
